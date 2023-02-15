@@ -143,7 +143,8 @@ crystalpayAPI.Invoice.create(amount, InvoiceType, lifetime, description="TEST", 
 # InvoiceType.purchase
 
 # Пример вызова
-# crystalpayAPI.Invoice.create(100, InvoiceType.purchase, 15)
+
+crystalpayAPI.Invoice.create(100, InvoiceType.purchase, 15)
 
 #Пример ответа
 # {
@@ -164,7 +165,7 @@ crystalpayAPI.Payoff.create(amount, "method", "wallet", PayoffSubtractFrom, amou
 # PayoffSubtractFrom.balance
 # PayoffSubtractFrom.amount
 
-# Пример выполнения
+# Пример вызова
 
 crystalpayAPI.Payoff.create(55, "BITCOIN", "Реквизиты кошелька получателя", PayoffSubtractFrom.balance) -> json
 
