@@ -107,9 +107,6 @@ class CrystalPAY:
                     "auth_secret": self.__auth_secret
                 })
             )
-
-            if(response["error"]):
-                raise Exception(response['errors'])
                 
             return response
 
