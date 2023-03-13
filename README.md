@@ -103,6 +103,29 @@ crystalpayAPI.Balance.getinfo(hide_empty=False) -> json
 
 ```
 
+Выставление счёта на оплату
+```python
+
+crystalpayAPI.Invoice.create(amount, InvoiceType, lifetime, description="TEST", etc..) -> json
+
+# InvoiceType:
+# InvoiceType.topup
+# InvoiceType.purchase
+
+# Пример вызова
+
+crystalpayAPI.Invoice.create(100, InvoiceType.purchase, 15)
+
+#Пример ответа
+# {
+#   "id": "123456789_abcdefghij",
+#   "url": "https://pay.crystalpay.io/?i=123456789_abcdefghij",
+#   "amount": 100,
+#   "type": "purchase"
+# }
+
+```
+
 Получение информации о счёте
 ```python
 
@@ -129,29 +152,6 @@ crystalpayAPI.Invoice.getinfo(id) -> json
 #   "extra": "",
 #   "created_at": "2023-01-01 00:00:00",
 #   "expired_at": "2023-01-03 12:34:56"
-# }
-
-```
-
-Выставление счёта на оплату
-```python
-
-crystalpayAPI.Invoice.create(amount, InvoiceType, lifetime, description="TEST", etc..) -> json
-
-# InvoiceType:
-# InvoiceType.topup
-# InvoiceType.purchase
-
-# Пример вызова
-
-crystalpayAPI.Invoice.create(100, InvoiceType.purchase, 15)
-
-#Пример ответа
-# {
-#   "id": "123456789_abcdefghij",
-#   "url": "https://pay.crystalpay.io/?i=123456789_abcdefghij",
-#   "amount": 100,
-#   "type": "purchase"
 # }
 
 ```
