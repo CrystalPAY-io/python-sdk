@@ -262,7 +262,7 @@ crystalpayAPI.Payoff.getinfo(id) -> json
 
 ```
 
-Получение информации о заявке на вывод средств
+Получение списка доступных валют
 ```python
 
 crystalpayAPI.Ticker.getlist() -> json
