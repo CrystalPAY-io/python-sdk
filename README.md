@@ -88,17 +88,15 @@ crystalpayAPI.Balance.getinfo(hide_empty=False) -> json
 
 #Пример ответа
 # {
-#   "balances": {
-#     "LZTMARKET": {
-#       "amount": 100,
-#       "currency": "RUB"
-#     },
-#     "BITCOIN": {
-#       "amount": 0.00005,
-#       "currency": "BTC"
-#     }
-#     ...
+#   "LZTMARKET": {
+#      "amount": 100,
+#      "currency": "RUB"
+#   },
+#   "BITCOIN": {
+#      "amount": 0.00005,
+#      "currency": "BTC"
 #   }
+#   ...
 # }
 
 ```
