@@ -266,21 +266,19 @@ crystalpayAPI.Payoff.getinfo(id) -> json
 crystalpayAPI.Ticker.getlist() -> json
 
 #Пример ответа
-# {
-#   "tickers": [
-#     "BCH",
-#     "BNB",
-#     "BTC",
-#     "DASH",
-#     "ETH",
-#     "LTC",
-#     "MATIC",
-#     "TON",
-#     "TRX",
-#     "USD",
-#     "USDC"
-#   ]
-# }
+# [
+#   "BCH",
+#   "BNB",
+#   "BTC",
+#   "DASH",
+#   "ETH",
+#   "LTC",
+#   "MATIC",
+#   "TON",
+#   "TRX",
+#   "USD",
+#   "USDC"
+# ]
 
 ```
 
