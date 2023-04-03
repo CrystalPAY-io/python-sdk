@@ -313,7 +313,7 @@ class CrystalPAY:
                 })
             )
 
-            return response
+            return response["tickers"]
 
         ''' Получение курса валют по отношению к рублю '''
 
